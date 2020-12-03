@@ -3,7 +3,7 @@ use pyo3::prelude::*;
 use tokenizations::{get_alignments, get_charmap, get_original_spans, Alignment, CharMap};
 
 #[pymodule]
-fn spacy_tokenizations(_py: Python, m: &PyModule) -> PyResult<()> {
+fn tokenizations(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add("__version__", "0.7.2")?;
 
     #[pyfn(m, "get_alignments")]
