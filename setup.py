@@ -7,7 +7,7 @@ from setuptools_rust import RustExtension
 
 setup(
     name="spacy-tokenizations",
-    version="0.7.2",
+    version="0.7.2.dev0",
     packages=["spacy_tokenizations", "spacy_tokenizations.tests"],
     rust_extensions=[RustExtension("spacy_tokenizations.tokenizations")],
 )
