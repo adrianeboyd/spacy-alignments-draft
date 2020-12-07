@@ -2,9 +2,9 @@
 
 # spacy-tokenizations: Align tokenizations for spaCy + transformers
 
-A spaCy package for Yohei Tamura's Rust [tokenizations
-library](https://github.com/tamuhey/tokenizations/) and [Python
-bindings](https://github.com/tamuhey/tokenizations/tree/master/python).
+A spaCy package for Yohei Tamura's Rust
+[tokenizations](https://github.com/tamuhey/tokenizations/) library with Python
+bindings.
 
 ## Installation
 
