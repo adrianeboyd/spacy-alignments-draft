@@ -1,6 +1,6 @@
 <a href="https://explosion.ai"><img src="https://explosion.ai/assets/img/logo.svg" width="125" height="125" align="right" /></a>
 
-# spacy-tokenizations: Align tokenizations for spaCy + transformers
+# spacy-alignments: Align tokenizations for spaCy + transformers
 
 A spaCy package for Yohei Tamura's Rust
 [tokenizations](https://github.com/tamuhey/tokenizations/) library with Python
@@ -10,19 +10,19 @@ bindings.
 
 ```
 pip install -U pip setuptools wheel
-pip install spacy-tokenizations
+pip install spacy-alignments
 ```
 
 If no binary wheel is available for your platform, you will need to [install
 Rust](https://www.rust-lang.org/tools/install) in order to build
-`spacy-tokenizations` from source.
+`spacy-alignments` from source.
 
-## spacy-tokenizations vs. pytokenizations
+## spacy-alignments vs. pytokenizations
 
-The `spacy_tokenizations` module is a drop-in replacement for `tokenizations`:
+The `spacy_alignments` module is a drop-in replacement for `tokenizations`:
 
 ```python
-import spacy_tokenizations as tokenizations
+import spacy_alignments as tokenizations
 a2b, b2a = tokenizations.get_alignments(["å", "BC"], ["abc"])
 assert a2b == [[0], [0]]
 assert b2a == [[0, 1]]
@@ -31,4 +31,4 @@ assert b2a == [[0, 1]]
 The only difference between this package and the original
 [`pytokenizations`](https://pypi.org/project/pytokenizations/) is that it
 switches the build system to `setuptools-rust` to make it easier for us at
-Explosion to build binary and source packages for a wider range of platforms.
+Explosion to build source and binary packages for a wider range of platforms.
